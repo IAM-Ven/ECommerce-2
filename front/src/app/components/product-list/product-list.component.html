@@ -1,0 +1,16 @@
+<div class="centered" >
+    <div class="container">
+        <div class="product-header">
+            <h3 class="product-title">Products</h3>
+        </div>
+       
+        <div class="product-body"*ngFor="let item of pageOfItems">
+            <span>{{item.name}}</span>
+            <span>{{item.price}}$</span>
+        </div>
+
+        <div class="product-footer">
+            <jw-pagination [items]="items" (changePage)="onChangePage($event)"></jw-pagination>
+        </div>
+    </div>
+</div>

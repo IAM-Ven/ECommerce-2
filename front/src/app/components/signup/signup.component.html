@@ -1,0 +1,35 @@
+
+<form class = "centered" [formGroup]="signUpForm" method="post"  (ngSubmit)="signUp()" >
+    <div class="imgcontainer">
+    <h1>ECommerce Sign Up</h1>    
+    </div>
+  
+    <div class="container">
+      <label for="email" ><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" formControlName="email" ngDefaultControl>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" formControlName="password" name="psw" ngDefaultControl>
+
+      <label for="merchant_type"><b>Merchant Type</b></label>
+      <input type="text" placeholder="Enter merchant type" formControlName="merchant_type" name="merchant_type" ngDefaultControl>
+  
+      <label for="merchant_name"><b>Merchant Name</b></label>
+      <input type="text" placeholder="Enter merchant name" formControlName="merchant_name" name="merchant_name" ngDefaultControl>
+
+      <label for="owner_name"><b>Enter Owner Name</b></label>
+      <input type="text" placeholder="Enter owner name" formControlName="owner_name" name="owner_name" ngDefaultControl>
+
+      <label for="address"><b>Address</b></label>
+      <input type="text" placeholder="Enter address" formControlName="address" name="address" ngDefaultControl>
+
+      <label for="phone"><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter phone number" formControlName="phone" name="phone" ngDefaultControl>
+
+      <button type="submit">Sign up</button>
+    </div>
+  
+    <div class="container">
+      <span class="psw"><a href="#" (click)="routeToSignIn()">Sign in instead?</a></span>
+    </div>
+</form>
